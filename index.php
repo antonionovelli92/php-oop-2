@@ -17,12 +17,7 @@
             <section id="food-product">
                 <h2>Food <i class="<?php FoodProduct::$icon ?>"></i></h2>
                 <div class="d-flex">
-                    <?php foreach ($food_products as $product) {
-                        include __DIR__ . '/includes/cards/food_card.php';
-                    }
-                    ?>
-
-
+                    <?php foreach ($food_products as $product) include __DIR__ . '/includes/cards/food_card.php'; ?>
                 </div>
             </section>
             <section id="toy-product" class="mt-5">

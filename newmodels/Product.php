@@ -54,17 +54,6 @@ class Product
 
         return $this;
     }
-    public function getPrice()
-    {
-        return $this->price;
-    }
-
-    public function setPrice($price)
-    {
-        $this->price = $price;
-
-        return $this;
-    }
     public function getCategory()
     {
         return $this->price;
@@ -74,6 +63,18 @@ class Product
     {
         if ($category instanceof Category === false) return false;
         $this->category = $category;
+
+        return $this;
+    }
+
+    public function getPrice()
+    {
+        return $this->price;
+    }
+
+    public function setPrice($price)
+    {
+        $this->price = $price;
 
         return $this;
     }
